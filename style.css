@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    padding: 0 50px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    flex-wrap: wrap;
+}
+
+.top h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.top p{
+    font-size: .9rem;
+    color: hsl(300, 43%, 22%);
+    line-height: 1.5;
+}
+
+.customer-rating{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7F2F8;
+    padding: .7rem 1.5rem;
+    margin-bottom: .8rem;
+    font-size: .7rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.rating-img{
+    margin-right: 1rem;
+}
+
+.rating-2nd{
+    margin-left: 1rem;
+}
+
+.rating-3rd{
+    margin-left: 2rem;
+}
+
+.bottom-ratings{
+    margin-top: 50px;
+}
+
+.rating-card{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 1rem;
+    border-radius: .5rem;
+    padding: 20px 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.profile h3{
+    font-size: .8rem;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.profile h5{
+    font-size: .8rem;
+    color: hsl(333, 80%, 67%);
+}
+
+.review p{
+    color: white;
+    margin-top: 10px;
+    line-height: 1.2rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.rating-card-2{
+    margin-top: 1rem;
+}
+.rating-card-3{
+    margin-top: 2rem;
+}
+
+.bottom-ratings{
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+@media only screen and (max-width: 775px) {
+    html{
+        font-size: 18px;
+    }
+    .container{
+        padding: 10px;
+    }
+    .top{
+        justify-content: center;
+    }
+    .top h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .top p{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .customer-rating{
+        justify-content: center;
+    }
+    .rating-2nd{
+        margin-left: 0;
+    }
+    .rating-3rd{
+        margin-left: 0;
+    }
+    .rating-card{
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 1rem;
+        padding: 1.5rem;
+        width: 320px;
+        height: 220px;
+    }
+    
+    .rating-card-2 {
+        margin-right: 0;
+    }
+    .rating-card-3 {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+        .none {
+            display: none;
+        } 
+        .customer-rating {
+            padding: .7rem 2.5rem;
+        }
+        .rating-card-1 {
+            margin-right: 0;
+        }
+        .rating-card-2 {
+            margin-right: 0;
+        }
+        .rating-card-3 {
+            margin-right: 0;
+        }
+
+}
